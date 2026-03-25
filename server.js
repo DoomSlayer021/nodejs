@@ -76,7 +76,7 @@ app.post("/registro", async (req, res) => {
     const sql = "INSERT INTO usuario (nombre, contrasena) VALUES (?, ?)";
 
     conexion.query(sql, [nombre, hash], (err) => {
-        if (err) return res.send("Error al registrar");
+        if (err) return res.send("Error al registrar" + err);
 
         res.send("Usuario registrado <br><a href='/'>Ir al login</a>");
     });
