@@ -1,0 +1,132 @@
+/* Fondo */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/XDD.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+/* Contenedor general (formularios) */
+.contenedor {
+    margin: 60px auto;
+    background-color: rgba(30, 30, 40, 0.95); /* gris oscuro */
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(128, 0, 128, 0.6); /* morado */
+    width: 350px;
+    color: #d0b3ff; /* morado claro */
+}
+
+/* Contenedor de lista */
+.contenedor-lista {
+    width: 80%;
+    margin: 40px auto;
+    background-color: rgba(30, 30, 40, 0.95);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(128, 0, 128, 0.6);
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    color: #c084fc; /* morado suave */
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #c084fc;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #6b7280; /* gris */
+    border-radius: 5px;
+    background-color: #1f1f2e;
+    color: white;
+}
+
+/* Botón */
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: #7c3aed; /* morado fuerte */
+    color: #e5e7eb; /* gris claro */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #a855f7; /* morado claro */
+    color: white;
+}
+
+/* Links */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #a78bfa;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e9d5ff;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    color: #e5e7eb;
+    background-color: #1f1f2e;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Celdas */
+th, td {
+    padding: 12px;
+    border: 1px solid #374151; /* gris */
+}
+
+/* Encabezado */
+th {
+    background-color: #7c3aed; /* morado */
+    color: #e5e7eb;
+}
+
+/* Filas */
+tr:nth-child(even) {
+    background-color: #2a2a3d;
+}
+
+/* Hover */
+tr:hover {
+    background-color: #3b2f5a;
+}
+
+/* Botón logout */
+a[href="/logout"] {
+    background-color: #7c3aed;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+a[href="/logout"]:hover {
+    background-color: #a855f7;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Instrumentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Formulario de Instrumentos</h2>
+        <form action="/guardar" method="post">
+            <label for="nombre">Nombre del instrumento:</label>
+            <input type="text" name="nombre" id="nombre" required>
+
+            <label for="tipo">Tipo:</label>
+            <input type="text" name="tipo" id="tipo" required>
+
+            <label for="precio">Precio:</label>
+            <input type="number" name="precio" id="precio" min="0" step="1" required>
+
+            <button type="submit">Guardar</button>
+        </form>
+        <br>
+        <a href="/listar">Ver instrumentos</a>
+        <a href="/usuarios">Ver usuarios</a>
+        <a href="/logout">Cerrar sesión</a>
+    </div>
+</body>
+</html>
