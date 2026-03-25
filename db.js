@@ -6,6 +6,9 @@ const pool = mysql.createPool({
     password: "mYGdiliiZCuSIApDbLtbjClsKYeAxQlF",
     database: "railway",
     port:"3306"
+    ssl: {
+    rejectUnauthorized:false
+}
 });
 
 module.exports = pool;
